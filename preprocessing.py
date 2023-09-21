@@ -13,6 +13,7 @@ import pandas as pd
 
 def katalk_msg_parse(file_path):
     my_katalk_data = list()
+    print(my_katalk_data)
     katalk_msg_pattern = "[0-9]{4}[년.] [0-9]{1,2}[월.] [0-9]{1,2}[일.] 오\S [0-9]{1,2}:[0-9]{1,2},.*:"  # 카카오톡 스마트폰 버전
     #katalk_msg_pattern = "\[(.*?)\] \[(오\S) ([0-9]{1,2}:[0-9]{1,2})\] (.*)"  # 카카오톡 PC버전
     date_info = "[0-9]{4}년 [0-9]{1,2}월 [0-9]{1,2}일 \S요일"
